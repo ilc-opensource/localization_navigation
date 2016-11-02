@@ -1,0 +1,2 @@
+add_subdirectory(test_PathPlanning)
+add_subdirectory(test_Localization)

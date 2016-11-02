@@ -1,0 +1,39 @@
+Copyright (c) 2016, Intel Corporation
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of test nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+3rdParty libraries licenses:
+OpenCV - http://www.opencv.org - BSD License - https://github.com/opencv/opencv/blob/master/LICENSE
+librealsense - https://github.com/IntelRealSense/librealsense - Apache License - https://github.com/IntelRealSense/librealsense/blob/master/LICENSE
+g2o - https://github.com/RainerKuemmerle/g2o - BSD License - https://github.com/RainerKuemmerle/g2o
+DBoW2 - https://github.com/dorian3d/DBoW2 - BSD License - https://github.com/dorian3d/DBoW2/blob/master/LICENSE.txt
+PCL - http://pointclouds.org - BSD License - https://github.com/PointCloudLibrary/pcl/blob/master/LICENSE.txt
+VTK - http://www.vtk.org - BSD License - http://www.vtk.org/licensing/
+Boost - http://www.boost.org/ - Boost License - http://www.boost.org/users/license.html
+Eigen3 - http://eigen.tuxfamily.org/ - MPL2 License - https://www.mozilla.org/en-US/MPL/2.0/
+flann - http://www.cs.ubc.ca/research/flann/ - BSD License - https://opensource.org/licenses/bsd-license.php
+PathFinder - https://github.com/Sahnvour/PathFinder - BSD License - https://github.com/Sahnvour/PathFinder/blob/master/LICENSE

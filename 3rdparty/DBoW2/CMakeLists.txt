@@ -1,0 +1,15 @@
+if(WIN32 AND NOT USE_PREBUILT_LIBRARIES)
+    include_directories($ENV{BOOST_ROOT})
+endif()
+
+include_directories(include)
+
+file(GLOB SRCS "src/*.cpp")
+file(GLOB HDRS "include/*.h*")
+add_library(DBoW2 SHARED ${SRCS} ${HDRS})
+if(USE_PREBUILT_LIBRARIES)
+    target_link_libraries(DBoW2 ${PREBUILT_LIBS})
+else()
+    target_link_libraries(DBoW2 ${OpenCV_LIBS})
+endif()
+set_target_properties(DBoW2 PROPERTIES FOLDER "3rdparty")

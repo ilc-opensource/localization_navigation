@@ -1,0 +1,5 @@
+add_subdirectory(2DMapGeneration)
+add_subdirectory(TreeGeneration)
+add_subdirectory(Localization)
+add_subdirectory(PathPlanning)
+add_subdirectory(RSWrapper)

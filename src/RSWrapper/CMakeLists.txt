@@ -1,0 +1,27 @@
+file(GLOB srcs "*.cpp")
+file(GLOB hdrs "*.h*")
+
+add_library(RSWrapper ${srcs} ${hdrs})
+
+if(WIN32)
+    if(USE_PREBUILT_LIBRARIES)
+        target_link_libraries(RSWrapper ${PREBUILT_LIBS})
+    else()
+        include_directories("$ENV{LIBRS}/include")
+        if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+            find_library(RealSense_LIB realsense "$ENV{LIBRS}/bin/x64" NO_DEFAULT_PATH)
+            find_library(RealSense_LIB_DEBUG realsense-d "$ENV{LIBRS}/bin/x64" NO_DEFAULT_PATH)
+        else()
+            find_library(RealSense_LIB realsense "$ENV{LIBRS}/bin/Win32" NO_DEFAULT_PATH)
+            find_library(RealSense_LIB_DEBUG realsense-d "$ENV{LIBRS}/bin/Win32" NO_DEFAULT_PATH)
+        endif()
+
+        target_link_libraries(RSWrapper ${OpenCV_LIBS})
+        target_link_libraries(RSWrapper optimized ${RealSense_LIB} debug ${RealSense_LIB_DEBUG})
+    endif()
+else()
+    target_link_libraries(RSWrapper ${OpenCV_LIBS})
+    target_link_libraries(RSWrapper realsense)
+endif()
+
+set_target_properties(RSWrapper PROPERTIES FOLDER "modules")
